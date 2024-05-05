@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  padding: 12px;
+  margin-left: 5px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #484852;
+}
+
+.books-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.books-container .book-list {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.books-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item button {
+  margin-left: 8px;
+}
+
+.add-book {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .books-container {
+    flex-direction: column;
+  }
+
+  .books-container .book-list {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .add-book {
+    width: calc(100% - 40px);
+  }
+}
